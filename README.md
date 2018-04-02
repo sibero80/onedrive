@@ -40,6 +40,19 @@ curl -fsS https://dlang.org/install.sh | bash -s dmd
 sudo pacman -S curl sqlite dmd
 ```
 
+### Dependencies: Raspbian
+```sh
+sudo apt-get install libcurl4-openssl-dev
+sudo apt-get install libsqlite3-dev
+wget https://github.com/ldc-developers/ldc/releases/download/v1.8.0/ldc2-1.8.0-linux-armhf.tar.xz
+tar -xvf ldc2-1.8.0-linux-armhf.tar.xz
+```
+When installing, use:
+```sh
+make DC=/home/username/ldc2-1.8.0-linux-armhf/bin/ldmd2
+```
+
+
 ### Installation
 ```sh
 git clone https://github.com/skilion/onedrive.git
